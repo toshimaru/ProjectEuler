@@ -1,10 +1,8 @@
 #!/usr/bin/env ruby
 
 def palindrome?(n)
-  str = n.to_s()
-  a = str.slice(0,3)
-  b = str.slice(3,3).reverse()
-  return a === b
+  s = n.to_s()
+  return s === s.reverse()
 end
 
 def solve
